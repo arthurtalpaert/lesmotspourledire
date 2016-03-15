@@ -8,6 +8,11 @@ list (APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake_files")
 find_package (PETSc REQUIRED)
 find_package (CDMATH REQUIRED)
 
+# Include directories
+include_directories (${PETSC_INCLUDES})
+include_directories (${CDMATH_INCLUDES})
+
+# Executable
 add_executable (lesmotspourledire lesmotspourledire.cxx)
 target_link_libraries (lesmotspourledire
     ${CDMATH_LIBRARIES}

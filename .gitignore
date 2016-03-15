@@ -26,6 +26,7 @@
 *.exe
 *.out
 *.app
+lesmotspourledire
 
 # CMake output files
 CMakeCache.txt
